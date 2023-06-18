@@ -42,8 +42,8 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", inline: <<-SCRIPT
     echo "Building docker image..."
     cd /vagrant
-    docker build -t nanobox/elasticsearch:5 --no-cache=true 5
-    docker tag nanobox/elasticsearch:5 nanobox/elasticsearch:5
+    docker build -t mubox/elasticsearch:5 --no-cache=true 5
+    docker tag mubox/elasticsearch:5 mubox/elasticsearch:5
   SCRIPT
 
 end
